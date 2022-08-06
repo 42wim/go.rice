@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	zipexe "github.com/daaku/go.zipexe"
+	zipexe "github.com/42wim/go.zipexe"
 )
 
 func operationAppend(pkgs []*build.Package) {
@@ -88,8 +88,8 @@ func operationAppend(pkgs []*build.Package) {
 				// write directories as empty file with comment "dir"
 				if info.IsDir() {
 					header := &zip.FileHeader{
-						Name:     zipFileName,
-						Comment:  "dir",
+						Name:    zipFileName,
+						Comment: "dir",
 					}
 					header.SetModTime(info.ModTime())
 					_, err := zipWriter.CreateHeader(header)

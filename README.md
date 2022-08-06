@@ -1,7 +1,12 @@
 # go.rice
 
+This is a fork of https://github.com/GeertJohan/go.rice which fixes the build on go1.19 by using a modified go.zipexe (https://github.com/42wim/go.zipexe)
+More info about the issue: https://github.com/golang/go/issues/54227
+
+Ideally you should move to go embed
+
 [![Build Status](https://travis-ci.org/GeertJohan/go.rice.png)](https://travis-ci.org/GeertJohan/go.rice)
-[![Godoc](https://img.shields.io/badge/godoc-go.rice-blue.svg?style=flat-square)](https://godoc.org/github.com/GeertJohan/go.rice)
+[![Godoc](https://img.shields.io/badge/godoc-go.rice-blue.svg?style=flat-square)](https://godoc.org/github.com/42wim/go.rice)
 
 go.rice is a [Go](http://golang.org) package that makes working with resources such as html,js,css,images and templates easy. During development `go.rice` will load required files directly from disk. Upon deployment it's easy to add all resource files to a executable using the `rice` tool, without changing the source code for your package. go.rice provides methods to add resources to a binary in different scenarios.
 
@@ -16,13 +21,13 @@ This works fine when the source is available to the machine executing the binary
 Use `go get` to install the package the `rice` tool.
 
 ```bash
-go get github.com/GeertJohan/go.rice
-go get github.com/GeertJohan/go.rice/rice
+go get github.com/42wim/go.rice
+go get github.com/42wim/go.rice/rice
 ```
 
 ## Package usage
 
-Import the package: `import "github.com/GeertJohan/go.rice"`
+Import the package: `import "github.com/42wim/go.rice"`
 
 Serving a static content folder over HTTP with a rice Box:
 
@@ -123,7 +128,7 @@ This project is licensed under a Simplified BSD license. Please read the [LICENS
 
 ## Package documentation
 
-You will find package documentation at [godoc.org/github.com/GeertJohan/go.rice][godoc].
+You will find package documentation at [godoc.org/github.com/42wim/go.rice][godoc].
 
-[license]: https://github.com/GeertJohan/go.rice/blob/master/LICENSE
-[godoc]: http://godoc.org/github.com/GeertJohan/go.rice
+[license]: https://github.com/42wim/go.rice/blob/master/LICENSE
+[godoc]: http://godoc.org/github.com/42wim/go.rice

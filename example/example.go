@@ -8,7 +8,7 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/GeertJohan/go.rice"
+	"github.com/42wim/go.rice"
 	"github.com/davecgh/go-spew/spew"
 )
 

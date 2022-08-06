@@ -37,7 +37,7 @@ func main() {
 		}
 	case "embed-syso":
 		log.Println("WARNING: embedding .syso is experimental..")
-		log.Fatalln("FATAL: embed-syso is broken and will remain unusable until further notice. Please see https://github.com/GeertJohan/go.rice/issues/162")
+		log.Fatalln("FATAL: embed-syso is broken and will remain unusable until further notice. Please see https://github.com/42wim/go.rice/issues/162")
 	case "append":
 		operationAppend(pkgs)
 	case "clean":

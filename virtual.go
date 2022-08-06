@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/GeertJohan/go.rice/embedded"
+	"github.com/42wim/go.rice/embedded"
 )
 
 //++ TODO: IDEA: merge virtualFile and virtualDir, this decreases work done by rice.File
